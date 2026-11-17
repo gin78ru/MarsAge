@@ -115,7 +115,8 @@ fun App(repo: ProfilesRepo) {
                 rotationY = -50f * rel
                 cameraDistance = 16f * density
                 val a = abs(rel)
-                scale = 1f - 0.22f * a
+                scaleX = 1f - 0.22f * a
+                scaleY = 1f - 0.22f * a
                 alpha = 1f - 0.55f * a
             }) {
                 when (page) {
